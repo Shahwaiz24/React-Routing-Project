@@ -9,6 +9,7 @@ import Home from './components/Home/Home-component';
 import AboutComponent from './components/About/About-component';
 import ContactComponent from './components/Contact-us/Contact-component';
 import HomeComponent from './components/Home/Home-component';
+import GithubComponent from './components/Github/Github-component';
 
 const router = createBrowserRouter(
 [
@@ -27,6 +28,10 @@ const router = createBrowserRouter(
       {
         path: "contact-us",
         element: <ContactComponent/>
+      },
+      {
+        path: "github-get/:username",
+        element: <GithubComponent/>
       }
     ]
   }
